@@ -74,6 +74,7 @@ router.register(r'student', StudentViewSet)
 
 
 urlpatterns = [
+    url(r'^$', views.index, name='index'),
     url(r'^updatephonenumber/1/$', views.relocateStepOne, name='relocate'),
     url(r'^updatephonenumber/2/$', views.relocateStepTwo, name='relocate'),
     url(r'^admin/', admin.site.urls),

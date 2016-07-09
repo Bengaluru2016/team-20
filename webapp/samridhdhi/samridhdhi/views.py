@@ -4,6 +4,9 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 
 
+def index(request):
+	return render(request, "ui/index.html")
+
 def relocateStepOne(request):
 	print request
 	return HttpResponse(status=200)
