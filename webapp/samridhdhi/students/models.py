@@ -14,6 +14,11 @@ class Student(models.Model):
 	contactNumber = models.CharField(max_length=30)
 	idProof = models.CharField(max_length=30)
 	parentIncome = models.CharField(max_length=30)
-	
+	fatherName = models.CharField(max_length=30)
+	motherName = models.CharField(max_length=30)
+	nativePlace = models.CharField(max_length=30)
+	address = models.CharField(max_length=30)
+	alternateContact = models.CharField(max_length=30)
+
 	def __unicode__(self):
 		return self.name
