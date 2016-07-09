@@ -21,3 +21,13 @@ def relocateStepTwo(request):
 	response['Content-Type'] = 'text/plain'
 	return response
   	  	
+
+
+def communityMobilizer(request):
+	return render(request, "ui/communitymobilizer.html")
+
+def studentProfile(request):
+	return render(request, "ui/profile.html")
+
+def registerStudent(request):
+	return render(request, "ui/forms.html")

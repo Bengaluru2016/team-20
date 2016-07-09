@@ -51,6 +51,11 @@ class StudentSerializer(serializers.Serializer):
 	contactNumber = serializers.CharField()
 	idProof = serializers.CharField()
 	parentIncome = serializers.CharField()
+	fatherName = serializers.CharField()
+	motherName = serializers.CharField()
+	address = serializers.CharField()
+	alternateContact = serializers.CharField()
+	nativePlace = serializers.CharField()
 
 	def create(self, validated_data):
 		return Student.objects.create(**validated_data)
@@ -72,11 +77,13 @@ router.register(r'users', UserViewSet)
 router.register(r'student', StudentViewSet)
 
 
-
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^updatephonenumber/1/$', views.relocateStepOne, name='relocate'),
-    url(r'^updatephonenumber/2/$', views.relocateStepTwo, name='relocate'),
+    url(r'^updatephonenumber/1/$', views.relocateStepOne, name='relocate'),
+    url(r'^communitymobilizer/$', views.communityMobilizer, name='communityMobilizer'),
+    url(r'^registerstudent/$', views.registerStudent, name='registerStudent'),
+    url(r'^profile/$', views.studentProfile, name='studentProfile'),
     url(r'^admin/', admin.site.urls),
     url(r'^api/v1/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
