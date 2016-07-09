@@ -9,9 +9,15 @@ def index(request):
 
 def relocateStepOne(request):
 	print request
-	return HttpResponse(status=200)
+	response = HttpResponse("Success", status=200)
+	response['Content-Type'] = 'text/plain'
+	response['Content-Length'] = 4
+	response['Body'] = 'Test body'
+	return response
 
 def relocateStepTwo(request):
 	print request
-	return HttpResponse(status=404)	
-  	
+	response = HttpResponse("Failure", status=404)
+	response['Content-Type'] = 'text/plain'
+	return response
+  	  	
