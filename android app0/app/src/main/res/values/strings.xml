@@ -5,7 +5,4 @@
     <string name="action_settings">Settings</string>
     <string name="radio_male">Male</string>
     <string name="radio_female">Female</string>
-    <string name="radio_Kan">Kannada</string>
-    <string name="radio_Eng">English</string>
-    <string name="radio_Hin">Hindi</string>
 </resources>

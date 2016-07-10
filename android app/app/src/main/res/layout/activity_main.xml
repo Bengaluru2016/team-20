@@ -7,7 +7,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:id="@+id/title"
             android:text="Enrollment form"
             android:gravity="center"
@@ -36,6 +36,8 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/b2"/>
 
+
+
         <TextView
             android:layout_width="100dp"
             android:layout_height="30dp"
@@ -61,11 +63,59 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="30dp"
+            android:id="@+id/FName"
+            android:text="Father's Name"
+            android:gravity="center"
+            android:layout_below="@+id/Name"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="none"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/dFName"
+            android:layout_below="@+id/dName"
+            android:layout_toRightOf="@+id/FName"
+            android:layout_toEndOf="@+id/FName"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/MName"
+            android:text="Mother's Name"
+            android:gravity="center"
+            android:layout_below="@+id/dFName"
+            android:ellipsize="none"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/dMName"
+            android:layout_below="@+id/dFName"
+            android:layout_toRightOf="@+id/MName"
+            android:layout_toEndOf="@+id/MName"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
             android:id="@+id/Age"
             android:text="Age"
             android:gravity="center"
             android:textSize="20dp"
-            android:layout_below="@+id/Name"
+            android:layout_below="@+id/MName"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="5dp"
             android:background="@drawable/b1"/>
@@ -74,7 +124,7 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:id="@+id/dAge"
-            android:layout_below="@+id/dName"
+            android:layout_below="@+id/dMName"
             android:layout_toRightOf="@+id/Age"
             android:layout_toEndOf="@+id/Age"
             android:layout_marginTop="5dp"
@@ -124,7 +174,7 @@
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:id="@+id/DOB"
-            android:text="Date of Birth"
+            android:text="DOB"
             android:gravity="center"
             android:textSize="20dp"
             android:layout_below="@+id/Gender"
@@ -140,13 +190,14 @@
             android:layout_toRightOf="@+id/DOB"
             android:layout_toEndOf="@+id/Age"
             android:layout_marginTop="5dp"
+            android:text=""
             android:background="@drawable/b2"/>
 
         <TextView
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:id="@+id/Language"
-            android:text="Language"
+            android:id="@+id/Location"
+            android:text="Location"
             android:gravity="center"
             android:textSize="20dp"
             android:layout_below="@+id/DOB"
@@ -157,13 +208,61 @@
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="30dp"
-            android:id="@+id/dLanguage"
+            android:id="@+id/dLocation"
             android:layout_below="@+id/dDOB"
-            android:layout_toRightOf="@+id/Language"
-            android:layout_toEndOf="@+id/Language"
+            android:layout_toRightOf="@+id/Location"
+            android:layout_toEndOf="@+id/Location"
             android:layout_marginTop="5dp"
-            android:text="dd-mm-yy"
             android:background="@drawable/b2"/>
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/Language"
+            android:text="Language"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_below="@+id/Location"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/dLocation"
+            android:layout_marginTop="5dp"
+            android:id="@+id/radioLanguage"
+            android:layout_toEndOf="@+id/Language"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/Language">
+
+            <RadioButton
+                android:id="@+id/radioKan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_Eng"
+                android:layout_weight="1"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioEng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_Hin" />
+
+            <RadioButton
+                android:id="@+id/radioHin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_Kan" />
+
+        </RadioGroup>
+
+
 
         <TextView
             android:layout_width="100dp"
@@ -182,15 +281,141 @@
             android:layout_height="50dp"
             android:id="@+id/dAddress"
             android:inputType="textPostalAddress"
-            android:layout_below="@+id/dLanguage"
+            android:layout_below="@+id/radioLanguage"
             android:layout_toRightOf="@+id/Address"
             android:layout_toEndOf="@+id/Address"
             android:layout_marginTop="5dp"
             android:background="@drawable/b2"/>
 
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/Occ"
+            android:text="Occupation"
+            android:gravity="center"
+            android:layout_below="@+id/Address"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/dOcc"
+            android:layout_below="@+id/dAddress"
+            android:layout_toRightOf="@+id/Occ"
+            android:layout_toEndOf="@+id/Occ"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
 
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/Pno"
+            android:text="Contact"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_below="@+id/Occ"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/dPno"
+            android:layout_below="@+id/dOcc"
+            android:layout_toRightOf="@+id/Pno"
+            android:layout_toEndOf="@+id/Pno"
+            android:inputType="phone"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/Nplc"
+            android:text="Native Place"
+            android:gravity="center"
+            android:layout_below="@+id/Pno"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/dNplc"
+            android:layout_below="@+id/dPno"
+            android:layout_toRightOf="@+id/Nplc"
+            android:layout_toEndOf="@+id/Nplc"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/Pinc"
+            android:text="Parent's income"
+            android:gravity="center"
+            android:layout_below="@+id/Nplc"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/dPinc"
+            android:text="Rs."
+            android:layout_below="@+id/dNplc"
+            android:layout_toRightOf="@+id/Pinc"
+            android:layout_toEndOf="@+id/Pinc"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/Altcno"
+            android:text="Alternate contact"
+            android:gravity="center"
+            android:layout_below="@+id/Pinc"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/dAltcno"
+            android:layout_below="@+id/dPinc"
+            android:layout_toRightOf="@+id/Altcno"
+            android:layout_toEndOf="@+id/Altcno"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/IDprf"
+            android:text="ID Proof"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_below="@+id/Altcno"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/dIDprf"
+            android:layout_below="@+id/dAltcno"
+            android:layout_toRightOf="@+id/IDprf"
+            android:layout_toEndOf="@+id/IDprf"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
     </RelativeLayout>
 
 </ScrollView>
