@@ -20,6 +20,7 @@ from students.models import Student
 from django.conf.urls import url, include
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
+from samridhdhi import views
 
 # Serializers define the API representation.
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -73,6 +74,8 @@ router.register(r'student', StudentViewSet)
 
 
 urlpatterns = [
+    url(r'^updatephonenumber/1/$', views.relocateStepOne, name='relocate'),
+    url(r'^updatephonenumber/2/$', views.relocateStepTwo, name='relocate'),
     url(r'^admin/', admin.site.urls),
     url(r'^api/v1/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
