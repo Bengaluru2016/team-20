@@ -139,32 +139,6 @@ public class MainActivity extends ActionBarActivity {
             }
         };
         nThread.start();
-//        try {
-//
-//            URL url = new URL("http://xtramile2k16/api/b1/student");
-//            HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
-//            conn.setRequestMethod("POST");
-//            conn.setDoOutput(true);
-//
-//            List<NameValuePair> params = new ArrayList<NameValuePair>();
-//            params.add(new BasicNameValuePair("firstParam", paramValue1));
-//           // params.add(new BasicNameValuePair("secondParam", paramValue2));
-//           // params.add(new BasicNameValuePair("thirdParam", paramValue3));
-//
-//            OutputStream os = conn.getOutputStream();
-//            BufferedWriter writer = new BufferedWriter(
-//                    new OutputStreamWriter(os, "UTF-8"));
-//            writer.write(getQuery(params));
-//            writer.flush();
-//            writer.close();
-//            os.close();
-//
-//            conn.connect();
-//
-//        } catch (MalformedURLException e) {}
-//        catch (IOException e){}
-
-
     }
 
     private String getQuery(List<NameValuePair> params) throws UnsupportedEncodingException
