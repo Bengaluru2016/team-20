@@ -23,7 +23,7 @@
             android:textSize="20dp"
             android:layout_below="@+id/title"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/b1"/>
 
         <EditText
@@ -33,7 +33,7 @@
             android:layout_below="@+id/title"
             android:layout_toRightOf="@+id/ID"
             android:layout_toEndOf="@+id/ID"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/b2"/>
 
 
@@ -437,14 +437,158 @@
             android:layout_toRightOf="@+id/Image"
             android:layout_marginLeft="20dp"/>
 
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/title2"
+            android:text="Relocation data"
+            android:gravity="center"
+            android:layout_below="@+id/Image"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/b1"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/Replc"
+            android:text="Place of Relocation"
+            android:gravity="center"
+            android:layout_below="@+id/title2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/dReplc"
+            android:layout_below="@+id/title2"
+            android:layout_toRightOf="@+id/Replc"
+            android:layout_toEndOf="@+id/Replc"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/b2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/title3"
+            android:text="Status of Education"
+            android:gravity="center"
+            android:layout_below="@+id/Replc"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/b1"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/Sts"
+            android:text="Current status"
+            android:gravity="center"
+            android:layout_below="@+id/title3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/dSts"
+            android:layout_below="@+id/title3"
+            android:layout_toRightOf="@+id/Sts"
+            android:layout_toEndOf="@+id/Sts"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/title4"
+            android:text="Status of Health"
+            android:gravity="center"
+            android:layout_below="@+id/Sts"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/b1"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/Ph"
+            android:text="Physical health"
+            android:gravity="center"
+            android:layout_below="@+id/title4"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/dPh"
+            android:layout_below="@+id/title4"
+            android:layout_toRightOf="@+id/Ph"
+            android:layout_toEndOf="@+id/Ph"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/b2"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/Cwl"
+            android:text="Willingness of child"
+            android:gravity="center"
+            android:layout_below="@+id/Ph"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/dCwl"
+            android:layout_below="@+id/dPh"
+            android:layout_toRightOf="@+id/Cwl"
+            android:layout_toEndOf="@+id/Cwl"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/Pwl"
+            android:text="Willingness of Parent"
+            android:gravity="center"
+            android:layout_below="@+id/Cwl"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/dPwl"
+            android:layout_below="@+id/dCwl"
+            android:layout_toRightOf="@+id/Pwl"
+            android:layout_toEndOf="@+id/Pwl"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/b2"/>
+
+
+
         <Button
             android:id="@+id/Submit"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
-            android:layout_below="@+id/dIDprf"
-            android:layout_toRightOf="@+id/Image"
-            android:layout_marginLeft="20dp"/>
+            android:layout_below="@+id/Pwl"
+            android:layout_centerHorizontal="true"
+            />
 
     </RelativeLayout>
 

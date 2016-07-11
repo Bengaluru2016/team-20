@@ -87,6 +87,7 @@ public class MainActivity extends ActionBarActivity {
                 Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
                 Im.setImageBitmap(thumbnail);
                 Log.d("done","done");
+
             }
             else
             {
