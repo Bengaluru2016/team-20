@@ -1,9 +1,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent" android:layout_height="fill_parent">
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+ >
 
     <RelativeLayout android:id="@+id/r1"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:background="#99ddaa">
 
         <TextView
             android:layout_width="match_parent"
@@ -34,6 +36,7 @@
             android:layout_toRightOf="@+id/ID"
             android:layout_toEndOf="@+id/ID"
             android:layout_marginTop="20dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
 
@@ -58,6 +61,7 @@
             android:layout_toRightOf="@+id/Name"
             android:layout_toEndOf="@+id/Name"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -82,6 +86,7 @@
             android:layout_toRightOf="@+id/FName"
             android:layout_toEndOf="@+id/FName"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -106,6 +111,7 @@
             android:layout_toRightOf="@+id/MName"
             android:layout_toEndOf="@+id/MName"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -129,6 +135,7 @@
             android:layout_toRightOf="@+id/Age"
             android:layout_toEndOf="@+id/Age"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -192,6 +199,7 @@
             android:layout_toEndOf="@+id/Age"
             android:layout_marginTop="5dp"
             android:text=""
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -214,6 +222,7 @@
             android:layout_toRightOf="@+id/Location"
             android:layout_toEndOf="@+id/Location"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
 
@@ -286,6 +295,7 @@
             android:layout_toRightOf="@+id/Address"
             android:layout_toEndOf="@+id/Address"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -307,6 +317,7 @@
             android:layout_toRightOf="@+id/Occ"
             android:layout_toEndOf="@+id/Occ"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -329,6 +340,7 @@
             android:layout_toRightOf="@+id/Pno"
             android:layout_toEndOf="@+id/Pno"
             android:inputType="phone"
+            android:gravity="center"
             android:layout_marginTop="5dp"
             android:background="@drawable/b2"/>
 
@@ -351,6 +363,7 @@
             android:layout_toRightOf="@+id/Nplc"
             android:layout_toEndOf="@+id/Nplc"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -469,6 +482,7 @@
             android:layout_toRightOf="@+id/Replc"
             android:layout_toEndOf="@+id/Replc"
             android:layout_marginTop="20dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -500,6 +514,7 @@
             android:layout_below="@+id/title3"
             android:layout_toRightOf="@+id/Sts"
             android:layout_toEndOf="@+id/Sts"
+            android:gravity="center"
             android:layout_marginTop="5dp"
             android:background="@drawable/b2"/>
 
@@ -535,6 +550,7 @@
             android:layout_toRightOf="@+id/Ph"
             android:layout_toEndOf="@+id/Ph"
             android:layout_marginTop="20dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -556,6 +572,7 @@
             android:layout_toRightOf="@+id/Cwl"
             android:layout_toEndOf="@+id/Cwl"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -577,6 +594,7 @@
             android:layout_toRightOf="@+id/Pwl"
             android:layout_toEndOf="@+id/Pwl"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
 

@@ -3,7 +3,8 @@
 
     <RelativeLayout android:id="@+id/r1"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:background="#99ddaa">
 
         <TextView
             android:layout_width="match_parent"
@@ -351,6 +352,7 @@
             android:layout_toRightOf="@+id/Nplc"
             android:layout_toEndOf="@+id/Nplc"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -374,6 +376,7 @@
             android:layout_toRightOf="@+id/Pinc"
             android:layout_toEndOf="@+id/Pinc"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             android:background="@drawable/b2"/>
 
         <TextView
@@ -422,9 +425,11 @@
 
         <ImageView
             android:id="@+id/Image"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_below="@+id/IDprf"
+            android:background="@drawable/b2"
+
             />
 
         <Button
@@ -435,16 +440,20 @@
             android:layout_marginTop="50dp"
             android:layout_below="@+id/dIDprf"
             android:layout_toRightOf="@+id/Image"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            android:background="#c9bba8"/>
 
         <Button
             android:id="@+id/Submit"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
-            android:layout_below="@+id/dIDprf"
-            android:layout_toRightOf="@+id/Image"
-            android:layout_marginLeft="20dp"/>
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/Image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="connect"
+            android:background="#c9bba8"/>
 
     </RelativeLayout>
 
